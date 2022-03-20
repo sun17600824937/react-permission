@@ -4,7 +4,7 @@ export const hu = ()=>{
     return (
 
         <div>
-            ds 
+            我也是mac提交的哦
         </div>
     )
 }
