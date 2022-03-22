@@ -9,9 +9,10 @@ export interface Routers {
 }
 const Login = lazy( () => import('../page/Login') )
 const Dashed = lazy( () => import('../page/Dashed'))
+const Error = lazy( () =>  import('../page/Error'))
 export const routers:Routers[] = [
     {
-        path:'/login',
+        path:'/',
         name:'登陆',
         key:'login',
         component:<Login />
@@ -23,5 +24,11 @@ export const routers:Routers[] = [
         key:'dashed',
         component:<Dashed />
 
+    },
+    {
+        path:'*',
+        name:'错误',
+        key:'404',
+        component:<Error />
     }
 ]
