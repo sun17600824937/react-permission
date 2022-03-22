@@ -1,9 +1,11 @@
-export const a = ()=>{
+const a = ()=>{
 
 
     return (
         <div>
-            我阿萨德Mac
+            sad
         </div>
     )
 }
+
+export default a 
