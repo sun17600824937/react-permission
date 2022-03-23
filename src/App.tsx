@@ -3,10 +3,15 @@ import { Breadcrumb, Button, Layout, Menu, Tooltip } from 'antd';
 
 import { UserOutlined, LaptopOutlined, NotificationOutlined } from '@ant-design/icons';
 import Views from './page/views/views';
-
+import axios from 'axios'
 const { SubMenu } = Menu;
 const { Header, Content, Sider } = Layout;
 function App() {
+  // /permission/list'
+    axios.get("/permission/list").then(res => {
+      console.log(res);
+      
+    })
   return (
     <Views/>
     // <Layout>

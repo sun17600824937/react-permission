@@ -13,10 +13,8 @@ import { Routers, routers } from "../../router"
                                 <Route path={item.path} element={item.component} key={item.key} >
                                         
                                         {
-                                            Routerss(item.children)
-                                        
-                                        }
-                                        
+                                            Routerss(item.children)  
+                                        }  
                                 </Route>
                             )
                     } else {
