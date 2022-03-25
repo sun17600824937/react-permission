@@ -10,24 +10,25 @@ import { Routers, routers } from "../../router"
            return route.map((item) => {
                     if(item.children) {
                             return (
-                                <Route path={item.path} element={item.component} key={item.key} >
+                            <Route path={item.path} element={item.component} key={item.key} >
                                         
                                         {
                                             Routerss(item.children)  
                                         }  
+                                    
                                 </Route>
                             )
                     } else {
-
-                        return <Route path={item.path} element={item.component} key={item.key} ></Route>
+                        return  <Route path={item.path} element={item.component} key={item.key} ></Route> 
+                                                           
                     }
 
             })
         }
         return (
             <>
-                <Suspense fallback={"shiwu"}>
                 
+                <Suspense fallback={"shiwu"}>
                         <Router>
                             <Routes>
                                 {
@@ -36,8 +37,8 @@ import { Routers, routers } from "../../router"
                                 }
                             </Routes>
                         </Router>
-                
-                </Suspense>
+                        </Suspense>
+               
             </>
         )
 

@@ -39,7 +39,7 @@ const LoginScreen = (props:any)=>{
         // }
         const submit = (values:{username:string,password:string})=>{
        
-            history('/home',{
+            history('/Layout',{
                 state:{
                     datatas:9
                 }

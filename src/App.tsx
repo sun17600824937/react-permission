@@ -4,6 +4,7 @@ import { Breadcrumb, Button, Layout, Menu, Tooltip } from 'antd';
 import { UserOutlined, LaptopOutlined, NotificationOutlined } from '@ant-design/icons';
 import Views from './page/views/views';
 import axios from 'axios'
+
 const { SubMenu } = Menu;
 const { Header, Content, Sider } = Layout;
 function App() {
@@ -13,7 +14,11 @@ function App() {
       
     })
   return (
-    <Views/>
+    <>
+       <Views/>
+     
+    </>
+ 
     // <Layout>
     // <Header className="header">
     //   <div className="logo" />
